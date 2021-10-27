@@ -1,10 +1,11 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
-    name = 'AWSUtils',
+    name = 'awsutils',
     version = '1.0',
     description = 'OOP utilites for accesssing AWS services',
-    packages = [
-        'awsutils'
+    packages = find_packages(),
+    install_requires = [
+        'boto3'
     ]
 )
